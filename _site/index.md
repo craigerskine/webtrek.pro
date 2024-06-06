@@ -1,5 +1,5 @@
 ---
-layout: 'layouts/default.njk'
+layout: 'layouts/splash.njk'
 title: Welcome
 ---
 

@@ -38,10 +38,10 @@ install({
     extend: {
       colors: ({ theme }) => ({
         pri: theme('colors.sky'),
-        sec: theme('colors.pink'),
+        sec: theme('colors.orange'),
       }),
       fontFamily: ({ theme }) => ({
-        sans: ['Inter', ...theme('fontFamily.sans')],
+        serif: ['EB Garamond', ...theme('fontFamily.serif')],
       }),
     },
   },
