@@ -1,0 +1,41 @@
+---
+meta:
+  title: webTrek
+  description: webTrek
+  url: https://webtrek.pro
+  author: Craig Erskine
+  author_url: https://craigerskine.com
+
+social:
+  - title: Twitter
+    url: https://twitter.com/qrayg
+    ico: mdi:twitter
+    color: blue
+  - title: Youtube
+    url: https://youtube.com/qrayg
+    ico: mdi:youtube
+    color: red
+  - title: Instagram
+    url: https://instagram.com/qrayg
+    ico: mdi:instagram
+    color: orange
+  - title: GitHub
+    url: https://github.com/craigerskine/webtrek.pro/
+    ico: mdi:github
+    color: neutral
+
+footer:
+  # - title: Sitemap
+  - title: Tech Stack
+    nav:
+      - title: '11ty'
+        sub: SSG
+        url: https://11ty.dev/
+      - title: 'Twind'
+        sub: Styles
+        url: https://twind.style/
+
+analytics: |-
+  // google analytics
+  // window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  // ga('create', 'UA-XXXXXXX-X', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
