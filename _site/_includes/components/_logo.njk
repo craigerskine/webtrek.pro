@@ -1,9 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 130" width="150" height="130" role="img" class="fill-current">
-  <title>{{ site.meta.title }}</title>
+{%- macro logo(param) -%}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" class="fill-current">
+  <title>{{ param.title }}</title>
   <g>
-    <path d="M109 10L84 60L68 32L20 40L0 82L25 117L46 75L84 130L150 0L109 10Z" />
-    <path d="M0 82L25 117L46 75L20 40L0 82Z" class="text-pri-400 dark:text-pri-400" />
-    <path d="M20 40L46 75L68 32L20 40Z" class="text-pri-700 dark:text-pri-700" />
-    <path d="M109 10L84 60L68 32L46 75L84 130L150 0L109 10Z" class="text-sec-600 dark:text-sec-600" />
+    {%- if param.alt %}
+      <path d="M87.2 9.23077L67.2 55.3846L54.4 29.5385L16 36.9231L0 75.6923L20 108L36.8 69.2308L67.2 120L120 0L87.2 9.23077Z" />
+      <path d="M87.2 9.23077L67.2 55.3846L54.4 29.5385L36.8 69.2308L67.2 120L120 0L87.2 9.23077Z" class="fill-cyan-500 dark:(fill-cyan-500)" />
+      <path d="M16 36.9231L36.8 69.2308L54.4 29.5385L16 36.9231Z" class="fill-slate-600 dark:(fill-slate-600)" />
+      <path d="M0 75.6923L20 108L36.8 69.2308L16 36.9231L0 75.6923Z" class="fill-rose-500 dark:(fill-rose-500)" />
+    {%- else %}
+      <path d="M65 75L90 0L120 4.76837e-06L98 120H76.6667L65 75Z" class="fill-cyan-500 dark:(fill-cyan-500)" />
+      <path d="M45 10L60 55L75 10H45Z" class="fill-slate-600 dark:(fill-slate-600)" />
+      <path d="M30 0L55 75L43.3333 120H22L0 4.76837e-06L30 0Z" class="fill-rose-500 dark:(fill-rose-500)" />
+    {%- endif %}
   </g>
 </svg>
+{%- endmacro -%}

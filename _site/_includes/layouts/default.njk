@@ -1,3 +1,4 @@
+{%- from 'components/_logo.njk' import logo -%}
 {%- import 'components/elements.njk' as el -%}
 {%- set page_title -%}{{ title +' : '+ site.meta.title if title else site.meta.title }}{%- endset -%}
 
@@ -39,7 +40,7 @@
       <header class="w-full flex-none">
         <nav class="mx-auto border-(b gray-500/20) py-8 px-4 max-w-7xl flex-(& col) items-center gap-4 md:(flex-row justify-between)">
           <a href="{{ '/' | url }}" class="group text-pri-700/50 flex-(& none) items-center gap-2 transform motion-safe:(transition) hover:(text-pri-500)">
-            <span class="w-12 h-12">{%- include "components/_logo.njk" %}</span>
+            <span class="w-12 h-12">{{ logo({ title: site.meta.title }) }}</span>
             <strong class="text-xl font-semibold hidden md:(text-2xl tracking-tight block)">{{ site.meta.title }}</strong>
           </a>
           <ul class="flex items-center gap-4 md:(gap-10)">

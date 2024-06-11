@@ -1,3 +1,4 @@
+{%- from 'components/_logo.njk' import logo -%}
 {%- import 'components/elements.njk' as el -%}
 {%- set page_title -%}{{ title +' : '+ site.meta.title if title else site.meta.title }}{%- endset -%}
 
@@ -41,7 +42,7 @@
       <header class="p-4 flex-(& 1)">
         <hgroup class="mt-auto mx-auto flex-(& col-reverse) items-center gap-3">
           <h1 class="text-5xl font-bold">{{ site.meta.title }}</h1>
-          <p>{%- include "components/_logo.njk" %}</p>
+          <p>{{ logo({ title: site.meta.title }) }}</p>
         </hgroup>
         <button class="color-mode text-gray-500 fixed top-2 right-2 motion-safe:(transition) hover:(text-gray-700)" aria-label="Toggle color mode">
           <span class="block dark:(hidden)"><iconify-icon icon="mdi:weather-sunny" inline="false" class="iconify text-xl"></iconify-icon> <span class="sr-only">Switch to dark mode</span></span>
