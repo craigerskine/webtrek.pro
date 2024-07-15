@@ -1,17 +1,8 @@
 {%- macro logo(param) -%}
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" class="fill-current">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" width="100" height="130" role="img" class="fill-current">
   <title>{{ param.title }}</title>
-  <g>
-    {%- if param.alt %}
-      <path d="M87.2 9.23077L67.2 55.3846L54.4 29.5385L16 36.9231L0 75.6923L20 108L36.8 69.2308L67.2 120L120 0L87.2 9.23077Z" />
-      <path d="M87.2 9.23077L67.2 55.3846L54.4 29.5385L36.8 69.2308L67.2 120L120 0L87.2 9.23077Z" class="fill-cyan-500 dark:(fill-cyan-500)" />
-      <path d="M16 36.9231L36.8 69.2308L54.4 29.5385L16 36.9231Z" class="fill-slate-600 dark:(fill-slate-600)" />
-      <path d="M0 75.6923L20 108L36.8 69.2308L16 36.9231L0 75.6923Z" class="fill-rose-500 dark:(fill-rose-500)" />
-    {%- else %}
-      <path d="M65 75L90 0L120 4.76837e-06L98 120H76.6667L65 75Z" class="fill-cyan-500 dark:(fill-cyan-500)" />
-      <path d="M45 10L60 55L75 10H45Z" class="fill-slate-600 dark:(fill-slate-600)" />
-      <path d="M30 0L55 75L43.3333 120H22L0 4.76837e-06L30 0Z" class="fill-rose-500 dark:(fill-rose-500)" />
-    {%- endif %}
-  </g>
+  <path d="m100 0-46 130-24-70-15 42-15-42 15-44h30l9 29 16-45z" class="text-rose-500 dark:text-rose-500" />
+  <path d="m15 16h30l-15 44z" class="text-slate-600 dark:text-slate-600" />
+  <path d="m15 16 15 44-15 42-15-42z" class="text-cyan-500 dark:text-cyan-500" />
 </svg>
 {%- endmacro -%}
